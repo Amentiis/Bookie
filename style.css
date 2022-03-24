@@ -18,17 +18,6 @@ a{
     color: inherit;
 }
 
-
-
-
-
-/* 
-CTRL + C + K pour mettre commentaire 
-CTRL + K + U pour enlever commentaire 
-*/
-
-
-
 main{
     display: flex;
     flex-direction: column;
@@ -40,6 +29,14 @@ main{
 html{
     scroll-behavior: smooth;
 }
+
+:root{
+    --grisclaire: #F2F2F2;
+    --Bleuclaire : #DEEBFF;
+    --bleu :  #0065FC;
+  }
+
+
 
 
 /************************************
@@ -79,36 +76,36 @@ nav a {
 
 .hebergement{
     padding: 20px; 
-    border-top: solid 3px #F2F2F2;
+    border-top: solid 3px var(--grisclaire);
     transition: all 300ms ease;
 }
 
 
 .hebergement:hover{
-    border-top: solid 3px #0065FC ;
+    border-top: solid 3px var(--bleu) ;
 
 }
 
 .hebergement a:hover{
-    color: #0065FC;
+    color: var(--bleu) ;
 }
 
 
 .activity{
     padding: 20px;
-    border-top: solid 3px #F2F2F2;
+    border-top: solid 3px var(--grisclaire);
     transition: all 300ms ease;
 }
 
 
 .activity a:hover{
-    color: #0065FC;
+    color: var(--bleu) ;
 }
 
 
 .activity:hover{
-    border-top: solid 3px #0065FC ;
-    color: #0065FC;
+    border-top: solid 3px var(--bleu);
+    color: var(--bleu) ;
 }
 
 
@@ -128,13 +125,13 @@ nav a {
 
 
 .button-search{
-    background-color: #0065FC;
+    background-color: var(--bleu);
     border-radius: 0px 15px 15px 0px;
     border: none;
     color: white;
     font-weight: 600;
     font-size: 20px;
-    padding: 0px 15px 0px 15px ;
+    padding: 0px 15px 0px 15px;
     transition: all 200ms ease;
 }
 
@@ -153,11 +150,15 @@ button .glass-button{
     
     border-left: none;
     border-right: none;
-    /* border: solid 1px gray; */
-    border-top: solid 2px #F2F2F2;
-    border-bottom: solid 2px #F2F2F2;
+    border-top: solid 2px var(--grisclaire);
+    border-bottom: solid 2px var(--grisclaire);
     padding-left: 15px;
     font-weight: bold;
+}
+
+
+.form-search{
+    display: flex;
 }
 
 .text-search::placeholder {
@@ -172,7 +173,7 @@ button .glass-button{
 }
 
 .icon_map{
-    background-color: #F2F2F2;
+    background-color: var(--grisclaire);
     border-radius: 15px 0px 0px 15px;
     padding: 20px;
     display: flex;
@@ -231,8 +232,8 @@ button .glass-button{
 }
 
 .filter i{
-    color : #0065FC; 
-    background-color: #deebff; 
+    color : var(--bleu); 
+    background-color: var(--Bleuclaire); 
     border-radius: 50%;
     margin-right: 10px;
     font-size: 20px;
@@ -254,8 +255,8 @@ button .glass-button{
 
 .info i{
     margin-right: 9px;
-    color : #0065FC ;
-    border: #deebff solid 1px;
+    color : var(--bleu) ;
+    border: var(--Bleuclaire) solid 1px;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -264,6 +265,13 @@ button .glass-button{
     align-items: center;
     font-size: 10px;
 }
+
+
+
+/************************************
+*       Marseille hébergement       *
+************************************/
+
 
 
 .section-marseille-hebergement{
@@ -292,7 +300,7 @@ button .glass-button{
     flex-direction: column;
     padding: 25px 25px 25px 25px ;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: var(--grisclaire);
     width: 60%;
 }
 
@@ -301,10 +309,7 @@ button .glass-button{
     flex-direction: column;
     width: 100%;
     padding: 10px;
-    transition: all 200ms ease;
-    /* min-width: 22rem;
-    max-width: 22rem; */
-   
+    transition: all 200ms ease; 
 }
 
 
@@ -332,7 +337,7 @@ button .glass-button{
 
 
 .card-texte-hebergement i {
-    color : #0065FC ;
+    color : var(--bleu) ;
 }
 
 
@@ -354,12 +359,18 @@ button .glass-button{
 
 }
 
+
+
+/************************************
+*       Marseille populaire      *
+************************************/
+
 .marseille-populaire{
     display:flex;
     flex-direction: column;
     padding: 25px 25px 0px 25px ;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: var(--grisclaire);
     width: 35%;
     margin-left: 50px;
 
@@ -385,7 +396,7 @@ button .glass-button{
     flex-direction: row;
     padding: 10px;
     transition: all 200ms ease;
-    max-height: 15rem;
+    max-height: 13rem;
     
 }
 
@@ -421,7 +432,7 @@ button .glass-button{
  
 
 .card-texte-populaire i {
-    color : #0065FC ;
+    color : var(--bleu) ;
 }
 
 .stars-populaire{
@@ -436,7 +447,6 @@ button .glass-button{
 .showmore {
     padding: 10px 0px 0px 17px;
     margin: 0;
-   
 }
 
 .showmore p{
@@ -450,19 +460,21 @@ button .glass-button{
     font-weight: bold;
     font-size: 20px;
     transition: all 300ms ease
-
 }
 
 .showmore a:hover{
    
     font-size: 25px;
-    color: #0065FC;
+    color: var(--bleu);
 }
 
 
+/************************************
+*            Activités              *
+************************************/
+
 .activity-list{
     display: flex;
-
 }
 
 .activity-list .column {
@@ -496,15 +508,6 @@ button .glass-button{
 }
 
 
-
-/* 
-
-Section Activité
-
-*/
-
-
-
 .activity-list article {
     height: 100%;
     box-shadow: 0px 0px 10px 0px #E0E0E0;
@@ -531,28 +534,21 @@ Section Activité
 
 
 
-/* 
-
-Section Footer
-
-*/
+/************************************
+*              FOOTER               *
+************************************/
 
 footer{
    display: flex;
    flex-direction: row;
-   background-color: #F2F2F2;
-   justify-content: space-evenly;
+   background-color: var(--grisclaire);
    width: 100%;
+   justify-content: space-evenly;
+
    
 }
 
 
-.bloc-footer{
- margin: 0px 100px 0px 0px;
- padding: 20px;
-
-
-}
 
 .bloc-footer a{
     text-decoration: none;
@@ -564,19 +560,28 @@ footer{
 .bloc-footer a:hover{
     font-size: 18px;
     font-weight: bold;
-    color: #0065FC;
+    color: var(--bleu);
 }
   
-  /**
-   * 768 annoncé.
-   */
+
+/************************************
+*          Media Queries            *
+************************************/
+
+/************************************
+*      Changement de position       *
+************************************/
 
 
+@media(max-width: 1330px){
 
+    .activity-list .column {
+        height: 435px;
+    }
 
-
-@media(max-width: 1580px){
-
+    .column h3 {
+        font-size: 15px;
+    }
 
     .link_card {
         width: 48%;
@@ -596,42 +601,24 @@ footer{
         
 
     }
-    
-    }
-    
-
-
-@media(max-width: 1200px){
-
-   
 
     .section-marseille-hebergement {
         padding: 0;
     }
-
-
-    .link_card {
-        width: 33%;
-
+    
     }
 
-    .activity-list .column {
-        height: 435px;
-    }
-
-    .column h3 {
-        font-size: 15px;
-    }
-
-}
 
 
+/************************************
+*             Tablette              *
+************************************/
 
-@media(max-width: 920px){
+@media(max-width: 992px){
     
     .link_card {
         width: 100%;
-        max-width: 50rem;
+        max-width: 59rem;
         min-width: 10rem;
         padding: 10px 8px;
     
@@ -664,8 +651,6 @@ footer{
 
 }
 
-
-
 @media(max-width: 850px){
 
 .link_card {
@@ -676,6 +661,12 @@ footer{
 }
 
 }
+
+
+
+/************************************
+*             Smartphone            *
+************************************/
 
 
 @media(max-width: 768px){
@@ -702,7 +693,7 @@ footer{
 
     .hebergement:hover{
         border-top: none;
-        border-bottom: solid 4px #0065FC ;
+        border-bottom: solid 4px var(--bleu) ;
 
     }
 
@@ -718,7 +709,7 @@ footer{
 
     .activity:hover{
         border-top: none;
-        border-bottom: solid 4px #0065FC ;
+        border-bottom: solid 4px var(--bleu) ;
         
         
     }
@@ -733,7 +724,6 @@ footer{
     }
 
     .top{
-        flex-basis: 100%;
         justify-content: center;
     }
 
@@ -780,7 +770,7 @@ footer{
     footer{
         display: flex;
         flex-direction: column;
-        background-color: #F2F2F2;
+        background-color: var(--grisclaire);
         justify-content: space-evenly;
         width: 100%;
      }

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet " href="normalize.css">
     <link rel="stylesheet " href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="fontAwesome/css/all.css">
+
     <title>Booki</title>
+
 </head>
+
 <body>
    <header class="top">
-
             <div class="logo">
                 <img src="images/logo/Booki@3x.png" alt="Logo Booki">
             </div>
@@ -24,7 +25,6 @@
                     <a href="#activity">Activités</a>
                 </div>
             </nav>
-           
    </header>
 
    <main>
@@ -35,13 +35,15 @@
            </div>
            <div class="corps-search">
                <div class="icon_map"> 
-                <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-            <input class="text-search" type="text" placeholder="Marseille, France">
-            <button class="button-search">
-                <i id = "text-button">Recherche</i>
-                <i class="fa-solid fa-magnifying-glass glass-button"></i>
-            </button>
+            <form class="form-search" method="post">
+                <input class="text-search" type="search" placeholder="Marseille, France">
+            </form> 
+                <button class="button-search">
+                    <span id= "text-button"> Rechercher</span>
+                    <i class="fa-solid fa-magnifying-glass glass-button"></i>
+                </button>    
            </div>
        </section>
 
@@ -72,7 +74,7 @@
             <p>Plus de 500 logements disponible dans cette ville</p>
        </div>
 
-       <section  class="section-marseille-hebergement">
+       <section class="section-marseille-hebergement">
             <div id="hebergement" class="marseille-hebergement">
                 <div class="card-title">
                     <h2>Hébergements à Marseille</h2>
@@ -246,7 +248,7 @@
                 <div class="column double">
                         <article>
                             <a href="#">
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues">
+                                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues">
                                 <h3>fort de Pomègues</h3> 
                             </a> 
                         </article>   
@@ -260,7 +262,7 @@
                 <div class="column">
                         <article>
                             <a href="#">
-                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des calanques">
+                                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des calanques">
                                 <h3>Parc National des Calanques</h3>
                             </a>
                         </article>   
@@ -285,7 +287,7 @@
    </main>
 
 
-   <Footer>
+   <footer>
     <div class="bloc-footer">
         <h2>À propos</h2>
         <p><a href="">Fonctionnement du site</a></p>
@@ -303,9 +305,8 @@
         <p><a href="">Nous contacter</a></p>
     </div>
 
-
-
-   </Footer>
+   </footer>
+   
                    
 
 </body>
